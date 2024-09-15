@@ -1,15 +1,25 @@
 ---
 import React from 'react';
-import ButtonCounter from '../components/ButtonCounter';
+import BuyList from '../components/BuyList';
+
+const buyList = [
+  'Controller',
+  'Bread',
+  'Water',
+  'Notebook',
+  'Math Book',
+  'Choco Bar',
+  'Milk'
+];
 ---
 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Astro + React + TS</title>
+    <title>Shopping List</title>
   </head>
   <body>
-    <ButtonCounter client:load />
+    <BuyList items={buyList} />
   </body>
 </html>
